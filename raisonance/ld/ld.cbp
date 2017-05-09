@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="ld" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="../bin/rlstm8" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option parameters='-Pc &quot;Debug\stm8_common.o,Debug\crc.o,Debug\eeprom.o,Debug\main.o,Debug\serial_3pro.o,Debug\tsl_user.o,Debug\usart.o,Debug\tsl.o,Debug\tsl_acq.o,Debug\tsl_acq_stm8tl5x_custom.o,Debug\tsl_dxs.o,Debug\tsl_ecs.o,Debug\tsl_filter.o,Debug\tsl_globals.o,Debug\tsl_linrot.o,Debug\tsl_object.o,Debug\tsl_time.o,Debug\tsl_time_stm8tl5x.o,Debug\tsl_touchkey.o&quot; TO(Debug\keyboard_stmtsl.aof) LIBPATH(C:\Raisonance\Ride\Lib\ST7)  DEBUGLINES DEBUGPUBLICS DEBUGSYMBOLS PR(Debug\keyboard_stmtsl.map) REMOVEUNCALLED   DATASTART(0x4000) RAMSIZE(1000h) CODESTART(8000h) CODESIZE(0x4000) STACKTOP(1000) STACKSIZE(0x400) ' />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-pedantic" />
+			<Add option="-Wall" />
+			<Add option="-std=c99" />
+			<Add directory="../common" />
+		</Compiler>
+		<ExtraCommands>
+			<Add before="${PROJECT_DIR}..\..\flex_bison\win_bison.exe ${PROJECT_DIR}Parser.y" />
+			<Add before="${PROJECT_DIR}..\..\flex_bison\win_flex.exe ${PROJECT_DIR}Lexer.l" />
+			<Mode after="always" />
+		</ExtraCommands>
+		<Unit filename="../common/Options.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../common/Options.h" />
+		<Unit filename="InputLexer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="InputLexer.h" />
+		<Unit filename="InputParser.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="InputParser.h" />
+		<Unit filename="Lexer.l" />
+		<Unit filename="Parser.y" />
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

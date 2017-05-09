@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_workspace_file>
+	<Workspace title="Workspace">
+		<Project filename="cc/cc.cbp" />
+		<Project filename="as/as.cbp" />
+		<Project filename="ld/ld.cbp" />
+		<Project filename="omf2elf/omf2elf.cbp" />
+		<Project filename="omf2hex/omf2hex.cbp" />
+	</Workspace>
+</CodeBlocks_workspace_file>

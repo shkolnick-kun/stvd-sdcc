@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="as" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="../bin/mastm8" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option parameters="example.ASM PIN(..\common) OJ(obj/sdcc/example.o)  DEBUG PRINT(olo.lst) I(lol.h) QUIET" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-pedantic" />
+			<Add option="-Wall" />
+			<Add option="-std=c99" />
+			<Add directory="../common" />
+		</Compiler>
+		<ExtraCommands>
+			<Add before="${PROJECT_DIR}..\..\flex_bison\win_bison.exe ${PROJECT_DIR}Parser.y" />
+			<Add before="${PROJECT_DIR}..\..\flex_bison\win_flex.exe ${PROJECT_DIR}Lexer.l" />
+			<Mode after="always" />
+		</ExtraCommands>
+		<Unit filename="../common/Options.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../common/Options.h" />
+		<Unit filename="InputLexer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="InputLexer.h" />
+		<Unit filename="InputParser.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="InputParser.h" />
+		<Unit filename="Lexer.l" />
+		<Unit filename="Parser.y" />
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

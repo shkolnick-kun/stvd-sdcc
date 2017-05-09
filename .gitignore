@@ -1,0 +1,50 @@
+# Desktop environment
+*.directory
+*~
+
+# Generated files
+*InputLexer.c
+*InputLexer.h
+*InputParser.c
+*InputParser.h
+*.output
+
+# Compiled Objects
+*.o
+*.obj
+*.rel
+*.cdb
+*.lk
+
+# Compiled Static libraries
+*.a
+*.lib
+
+# Linker outputs
+*.map
+*.lss
+*.lst
+
+# IDE files
+*.pbd
+*.cseg
+*.CSEG
+*.xrf
+*.XRF
+*.html
+*.cbTemp
+*.depend
+*.layout
+
+# Executables
+*.exe
+*.out
+*.app
+*.elf
+*.axf
+*.hex
+*.bin
+
+# Other files
+*obj*
+*bin*
